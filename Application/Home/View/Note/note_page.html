@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/questionsAndanswers.css" />  
+
+    <script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>
+  </head>
+
+<include file='Common:ueditor_js'/>
+	<body>
+		<!-- 引入头部 -->
+  <include file='Common:top'/>
+  
+		<div id="footers"></div>
+		<div class="all">
+			<div class="content">
+				<div class="question">
+					<div class="wt">
+						<div class="wt_left"><div class="tx_out">
+						  <if condition="$note['user_face'] neq ''">
+						  <img src="__ROOT__/{$note.user_face}" width="70"  hight="70"/>
+
+						  <else /> 
+							<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+							</if>
+						</div>
+						</div>
+                        <div class="wt_right">
+
+                        	<ul>
+                        	     <input type="hidden" class="id" value="{$note.n_id}">
+                        		<li class="wt1">{$note.n_title}</li>
+                        		<li class="wt2">{$note.n_content}</li>
+                        	    <li class="wt3">
+                        	    	<div class="wt_name"><span class="wt_names">{$note.user_name}<img src="__PUBLIC__/Index/img/ly.jpg"/><img src="__PUBLIC__/Index/img/ly.jpg"/> </span><span class="wt_time"><?php echo jishuantime($note['n_addtime']);?></span></div> 
+                        	    	<div class="wt_paly">
+                                <script type="text/javascript">
+(function(){
+var p = {
+url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+title:'', /*分享标题(可选)*/
+summary:'', /*分享摘要(可选)*/
+pics:'', /*分享图片(可选)*/
+flash: '', /*视频地址(可选)*/
+site:'', /*分享来源(可选) 如：QQ分享*/
+style:'103',
+width:50,
+height:16
+};
+var s = [];
+for(var i in p){
+s.push(i + '=' + encodeURIComponent(p[i]||''));
+}
+document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
+})();
+</script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+
+
+                        	    		<!-- <img src="__PUBLIC__/Index/img/fx_03.jpg" id="fx"/> --><span class="wt_span1">
+                                  <img src="__PUBLIC__/Index/img/shoucang_03.jpg"/>
+
+                                  <span class="Collection">{$note.n_colle_num}</span>
+
+                                  </span><span class="wt_span2"><img src="__PUBLIC__/Index/img/ll.jpg"/><span>{$note.n_click}</span></span> 
+                                  <span class="play_note">
+                                  <img src="__PUBLIC__/Index/img/dz.jpg"/>
+                                      <span class="note_fabulous">
+                                      {$note.n_fabulous}
+                                      </span>
+                                  </span>
+                        	    	</div>
+                        	    </li>
+
+                        	    <li class="wt4">
+                                    <foreach name="label" item="vo" >
+                              <span>{$vo.lab_name}</span>
+                                    </foreach>
+                              </li>
+                        	
+                        	</ul>
+          </div>
+			</div> 
+	  </div>
+  </div>  
+  <a href="{:U('note/note_add')}">我也写一篇</a>                                                          
+</div>
+				<div class="lists">
+					<div class="title_1">
+						<p>相关问题</p>
+					</div>
+					<ul id="about">
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+      
+ 
+       
+
+	</body>
+    <script type="text/javascript">
+    
+    $('#t1').click(function (){
+    	$('.navigation').hide();
+    	$('.login').hide();
+    	$('#search').show();
+    	$('.bj').show();
+    });
+    
+    $('#xx').click(function (){
+    	$('.navigation').show();
+    	$('.login').show();
+    	$('#search').hide();
+    	$('.bj').hide();
+    });
+
+
+   
+    //笔记收藏
+     $('.wt_span1').click(function(){
+        var n_id = $('.id').val();
+        //alert(n_id);
+        $.ajax({
+            type:"post",
+                url:"{:U('Note/collection')}",
+                data:{n_id:n_id},
+                success: function(msg){
+                 // alert(msg);
+                    if(msg==3){
+                         alert('您还没有登录，不能收藏');
+                       }
+                       if(msg==4){
+                         alert('这是您自己的笔记，不能收藏');
+                       }
+                       if(msg['status']==1){
+                         //alert('收藏成功');
+                        
+                         var str = '<span>'+msg['n_colle_num']+'</span>';
+                         $('.Collection').html(str);
+
+                       }
+                       if(msg['status']==2){
+                        
+                        var str = '<span>'+msg['n_colle_num']+'</span>';
+                         $('.Collection').html(str);
+                       }
+                      // $('.Collection').text(msg);
+                       
+                    }
+             
+             })
+    })
+
+    //笔记点赞
+     $('.play_note').click(function(){
+         var n_id = $('.id').val();
+              
+          //alert(n_id);
+           $.ajax({
+            type:"post",
+                url:"{:U('note/fabulous')}",
+                data:{n_id:n_id},
+                success: function(msg){
+                    //alert(msg);
+                    if(msg==0){
+                      alert('请先登录');
+                    }
+                    if(msg==1){
+                      alert('这是您自己的文章，不能点赞');
+                    }
+                    if(msg['status']==2){
+                        var str = '<span>'+msg['n_fabulous']+'</span>';
+                        //alert(123);
+                     $('.note_fabulous').html(str);
+                    }
+                    if(msg['status']==3){
+                      var str = '<span>'+msg['n_fabulous']+'</span>';
+                    $('.note_fabulous').html(str);
+                    }
+                      if(msg==4){
+                      alert('您还没有点过赞');
+                    }
+                }
+            })
+     })
+
+SyntaxHighlighter.all();  
+    
+
+    
+     
+    
+ 
+    </script>
+</html>

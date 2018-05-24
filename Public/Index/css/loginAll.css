@@ -1,0 +1,152 @@
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #E4E5E4;
+}
+#bodys{
+	width: 402px;
+	/*height: 300px;*/
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	margin-top: 62px;
+}
+.title{
+	color: #38383A;
+	font-size: 25px;
+	text-align: center;
+}
+.box_bj{
+	text-align: center;
+	width: 100%;	
+	background-color: #F4F4F4;
+	margin-top: 18px;
+	box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.01);
+	border-radius: 1px;
+}
+.box_bj2{
+	height: 266px;
+}
+.box_bj input{
+	border: 1.1px solid #B9C3C9;
+	height: 37px;
+	border-radius: 1px;
+	box-shadow:  0px 0px 2px 1px rgb(0,0,0,0.02);
+}
+.sjh{	
+	width: 256px;
+	margin-top: 44px;
+	padding-left: 12px;
+	
+}
+.psd{
+	width: 256px;
+	margin-top: 10px;
+	padding-left: 12px;
+}
+.yzms{
+	width: 270px;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.yzm{
+	width: 140px;
+	float: left;
+	padding-left: 12px;
+}
+.yzm_bnt{
+	height: 38px;
+	background-color: #38383A;
+	width: 105px;
+	border: none;
+	outline: none;
+	float: right;
+	color: #ffffff;
+	background-color: #38383A;
+	font-size: 15px;
+	box-shadow:  0px 0px 1px 1px rgb(0,0,0,0.02);
+}
+#bd{
+	width: 270px;
+	height: 33px;
+	background-color: #30639B;
+	border-radius: 1px;
+	font-size: 15px;
+	color: #FFFFFF;
+	border: none;
+	margin-top: 46px;
+	outline: none;
+	box-shadow:  0px 0px 1px 0.5px rgb(0,0,0,0.1);
+}
+.bodys_2{
+	width: 270px;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+	color: #38383A;
+	margin: 0 auto;
+	font-size: 13px;
+	padding: 15px 0;
+}
+.left{
+	width: 50%;
+	float: left;
+	cursor: pointer;
+}
+.right{
+	float: right;
+	width: 50%;
+	cursor: pointer;
+}
+.box_bj p{
+	text-align: center;
+	color: #9FA0A0;
+	font-size: 9px;
+	margin-top: 4px;
+}
+.box_bj a{
+	color: #3E3A39;
+}
+.logins{
+	height: 35.5px;
+	width: 402px;
+	background-color: #CED1D3;
+	color: #7D8488;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 13px;
+	line-height: 35px;
+	box-shadow:  0px 0px 1px 0.5px rgb(0,0,0,0.01);
+}
+.logins a{
+	color: #38383A;
+	margin-left: 8px;
+}
+.img{
+	margin-top: 14px;
+	height: 33px;
+	/*border: 1px solid red;*/
+}
+.qq{
+	margin-right: 23px;
+}
+.img img{	
+	vertical-align: top;
+	margin-left: 10px;
+	cursor: pointer;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: #C9CACA; 
+} 
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    color: #C9CACA; 
+} 
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #C9CACA; 
+}
+ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#C9CACA;
+} 

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/questionsAndanswers.css" />   
+    <script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>
+  </head>
+
+<include file='Common:ueditor_js'/>
+	<body>
+		<!-- 引入头部 -->
+	<include file='Common:top'/>
+		<div id="footers"></div>
+		<div class="all">
+			<div class="content">
+				<div class="question">
+					<div class="wt">
+						<div class="wt_left"><div class="tx_out">
+						   <if condition="$ques['user_face'] neq ''">
+						     <img src="__ROOT__/{$ques.user_face}" width="70"  hight="70"/>
+
+						     <else /> 
+							<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+							</if>
+						</div>
+						</div>
+                        <div class="wt_right">
+
+                        	<ul>
+                        	     <input type="hidden" class="id" value="{$ques.id}">
+                        		<li class="wt1">{$ques.title}</li>
+                        		<li class="wt2">{$ques.content}</li>
+                        	    <li class="wt3">
+                        	    	<div class="wt_name"><span class="wt_names">{$ques.user_name}<img src="__PUBLIC__/Index/img/ly.jpg"/><img src="__PUBLIC__/Index/img/ly.jpg"/> </span><span class="wt_time"><?php echo jishuantime($ques['quiz_time']);?></span></div> 
+                        	    	<div class="wt_paly">
+                                <script type="text/javascript">
+(function(){
+var p = {
+url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+title:'', /*分享标题(可选)*/
+summary:'', /*分享摘要(可选)*/
+pics:'', /*分享图片(可选)*/
+flash: '', /*视频地址(可选)*/
+site:'', /*分享来源(可选) 如：QQ分享*/
+style:'103',
+width:50,
+height:16
+};
+var s = [];
+for(var i in p){
+s.push(i + '=' + encodeURIComponent(p[i]||''));
+}
+document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
+})();
+</script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+
+
+                        	    		<!-- <img src="__PUBLIC__/Index/img/fx_03.jpg" id="fx"/> --><span class="wt_span1">
+                                  <img src="__PUBLIC__/Index/img/shoucang_03.jpg"/>
+
+                                  <span class="Collection">{$ques.colle_num}</span>
+
+                                  </span><span class="wt_span2"><img src="__PUBLIC__/Index/img/ll.jpg"/><span>{$ques.click}</span></span><span class="wt_span3"><img src="__PUBLIC__/Index/img/pl.jpg"/><span>{$ques.answer_count}</span></span> 
+                        	    	</div>
+                        	    </li>
+
+                        	    <li class="wt4">
+                                    <foreach name="label" item="vo" >
+                              <span>{$vo.lab_name}</span>
+                                    </foreach>
+                              </li>
+                        	    <li class="wt5">
+                        	     <button type="button" class="but">我来回答</button>
+                                <button type="button" class="invitation">邀请他人</button>
+                        	    </li>
+                              
+                        	</ul>
+                        </div>
+					</div>
+                    <div class="wt top" id="text" style="display:none">
+                    	<div class="texts">
+                    	  <!-- <textarea name="info" class="info" id="info" cols="30" rows="10"></textarea>  -->
+                      <div class="info" id="info" style="width:100%,height:300px"></div>           		
+                    	</div>
+                    	<div class="true"><button type="button">确 认</button></div>
+                    </div> 
+                    <!--问题列表-->
+                    <foreach name="answer_caina" item="cai" key="k" >
+            <div class="wt top">
+             
+              <div class="wt_left">
+              <if condition="$cai['user_face'] neq ''">
+                  <img src="__ROOT__/{$cai.user_face}" width="70"  hight="70"/>
+                  <else /> 
+                  <img src="__PUBLIC__/Index/img/touxiang.jpg" />
+                  </if>
+						  </div>	
+						<div class="wt_pl">
+						    <p class="wt1">{$cai.user_name}</p>
+						    <p class="wt2">{$cai.answer_content}</p>
+						    <p class="play"><span class="play_1"><img src="__PUBLIC__/Index/img/dz.jpg"/>{$cai.answer_fabulous}</span><span class="play_2"><img src="__PUBLIC__/Index/img/pl.jpg"/>{$cai.answer_fabulous}</span></p>
+						</div>
+
+						<div class="cn">已采纳</div>
+            </div>
+              </foreach>
+                      <foreach name="answer" item="vo" key="k" >
+                    <div class="wt top">
+                        <div class="wt_left">
+                            <div class="tx_out">
+	                <if condition="$vo['user_face'] neq ''">
+							    <img src="__ROOT__/{$vo.user_face}" width="70"  hight="70"/>
+							    <else /> 
+								  <img src="__PUBLIC__/Index/img/touxiang.jpg" />
+								  </if>
+							</div>
+						</div>	
+						<div class="wt_pl">
+                <input type="hidden" class="a_id" value="{$vo.id}">
+						    <p class="wt1">{$vo.user_name}</p>
+						    <p class="wt2">{$vo.answer_content}</p>
+               
+                  
+                
+                  <if condition='isset($_COOKIE["user_id"]) && $_COOKIE["user_id"] eq $ques["quid"]'>
+                <a href="{:U('Answer/adopt', array('id' => $vo['id'], 'qid' => $ques['id'], 'auid' => $vo['user_id']))}">采纳</a>
+                </if>
+             
+            
+						    <p class="play"><span class="play_answer">
+                <img src="__PUBLIC__/Index/img/dz.jpg"/>
+
+               <span class="anfabulous"> {$vo.answer_fabulous} </span>
+
+
+
+
+
+
+
+
+
+
+
+
+               </span><span class="play_2"><img src="__PUBLIC__/Index/img/pl.jpg"/>
+
+               <?php echo count($vo['comment']);?></span></p>
+
+						</div>
+                    </div>
+                    <div class="next">
+
+                      <?php foreach($vo['comment']  as $key => $val){?>
+                       <hr>
+                      <div class="wt">
+
+                        <div class="wt_left">
+                        	<div class="tx_out">
+	                            <if condition="$val['user_face'] neq ''">
+							    <img src="__ROOT__/<?php echo $val['user_face'];?>" width="70"  hight="70"/>
+
+							     <else /> 
+								<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+								</if>
+							</div>
+							
+						</div>	
+						<div class="wt_pl">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <input type="hidden" class="c_id" value="<?php echo $val['id']?>">
+
+
+
+
+
+
+
+
+
+
+						    <p class="wt1"> <?php echo $val['id']?> 
+                <?php echo $val['user_name'];?></p>
+						    <p class="wt2"><?php echo $val['comment_content'];?></p>
+						    <p class="play">
+                <span class="play_comment">
+                <img src="__PUBLIC__/Index/img/dz.jpg"/>
+                <span class="comment_fabulous">
+                <?php echo $val['comment_fabulous'];?>
+                </span>
+                </span>
+                <span class="play_2">
+                <img src="__PUBLIC__/Index/img/pl.jpg"/>12</span>
+                </p>
+
+						</div>
+                      </div>
+                     <?php }?>
+                     
+                    </div>
+                    </foreach>
+                    
+                    
+                     
+				</div>
+				<div class="lists">
+					<div class="title_1">
+						<p>相关问题</p>
+					</div>
+					<ul id="about">
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+        <div class="bj"></div>
+
+
+        <div id="tc" style="width:600px;height:500px;background-color:#ffffff;position:fixed;top:50%;left:50%;margin-left:-300px;margin-top:-250px;z-index:9;display:none">
+        <div id="gb">×</div>
+        <span class="yq"></span>
+        <table class="tab"></table>
+
+
+
+        </div>
+ 
+       
+
+	</body>
+    <script type="text/javascript">
+    
+    $('#t1').click(function (){
+    	$('.navigation').hide();
+    	$('.login').hide();
+    	$('#search').show();
+    	$('.bj').show();
+    });
+    
+    $('#xx').click(function (){
+    	$('.navigation').show();
+    	$('.login').show();
+    	$('#search').hide();
+    	$('.bj').hide();
+    });
+
+//百度编辑器
+    window.UEDITOR_HOME_URL = "__PUBLIC__/ueditor/";  
+    $(document).ready(function () {  
+      UE.getEditor('info', {  
+       initialFrameHeight: 200,  
+      // initialFrameWidth: 800,  
+      serverUrl: "{:U('Question/save_info')}"    
+    });  
+  }); 
+    //点击展示输入框
+    $('.but').click(function(){
+
+    	$('#text').toggle();
+    	$('.true').click(function(){
+           var id =$('.id').val();
+           var info=UE.getEditor('info').getContent()
+           
+             $.ajax({
+            type:"post",
+                url:"{:U('Answer/answer')}",
+                data:{id:id,info:info},
+                success: function(msg){
+                     	  if(msg=="5"){
+                		   alert('这是您自己提问的问题，不能回答');
+             	          }	
+		             	  if(msg=="4"){
+		             	  	alert('请先登录');
+		             	  }
+		                  if(msg=="3"){
+		                   alert('您已回答过');
+		                  }
+		                  if(msg=='1'){
+		                  	alert('回答成功')
+		                      location.href="{:U('Index/index')}";
+		                  }else{
+		                      alert("回答失败");
+                              window.history.back(-1);
+		                }
+              }
+            // });
+    })
+    })
+    	})
+    //邀请回答
+      //弹出邀请回答
+$('.invitation').click(function(){
+$('#tc').show();
+$('.bj').show(); 
+    $.ajax({
+      type:"post",
+      url:"{:U('User/invitation')}",
+      success: function(msg){
+                 //alert(msg);    
+            if(msg==1){
+            alert('请先登录');
+            }
+            var table="";
+            table+="<table border='1' align='center'>";
+            for (var i = 0; i < msg.length; i++){
+            var user_face='<img src="__ROOT__/'+msg[i].user_face+'" width="70"  hight="70" alt="">';
+            table+="<tr>";
+            table+='<td><input type="hidden" class="user_id" value="'+msg[i].user_id+'" /></td>';
+            table+='<td>'+user_face+'</td>';
+            table+="<td>"+msg[i]['user_name']+"</td>";
+            table+="<td><span class='yao'>邀请回答</span></td>";
+            table+="</tr>"
+                         // alert(msg[i]['user_name']);
+            }
+            table+="</table>";
+            $('.tab').html(table);
+                          
+
+        }
+
+               
+
+
+    })  
+})
+
+//执行邀请回答
+$('#tc').on('click','.yao',function(){
+  var t =  $(this).index('.yao');
+  var yao_id=$('.user_id:eq('+t+')').attr('value');
+  var q_id=$('.id').val();
+
+    // alert(q_id);
+$.ajax({
+      type:"post",
+      url:"{:U('User/yaoqing')}",
+      data:{yao_id:yao_id,q_id:q_id},
+      success: function(m){
+      // alert(m);
+                if(m['status']==1){
+                  var str='<span style="color:red">您成功邀请了'+m['username']+',请等待回答</span>';
+                  $('.yq').html(str);
+                }
+                if(m['status']==2){
+                  var str='<span style="color:red">邀请'+m['username']+'失败</span>';
+                  $('.yq').html(str);
+                }
+                if(m['status']==3){
+                  var str='<span style="color:red">你取消了对'+m['username']+'邀请</span>';
+                  $('.yq').html(str);
+                }
+                if(m['status']==4){
+                  var str='<span style="color:red">取消失败</span>';
+                  $('.yq').html(str);
+                }
+               
+                          }
+                            
+      })
+});
+
+
+       $('#gb').click(function(){
+         $('#tc').hide();
+         $('.bj').hide(); 
+         
+      })
+    
+    //收藏
+     $('.wt_span1').click(function(){
+        var q_id = $('.id').val();
+        //alert(q_id);
+        $.ajax({
+            type:"post",
+                url:"{:U('Question/Collection')}",
+                data:{q_id:q_id},
+                success: function(msg){
+                 // alert(msg['status'])
+                    if(msg==3){
+                         alert('您还没有登录，不能收藏');
+                       }
+                       if(msg==4){
+                         alert('这是您自己提问的问题，不能收藏');
+                       }
+                       if(msg['status']==1){
+                         //alert('收藏成功');
+                        
+                         var str = '<span>'+msg['colle_num']+'</span>';
+                         $('.Collection').html(str);
+
+                       }
+                       if(msg['status']==2){
+                        
+                        var str = '<span>'+msg['colle_num']+'</span>';
+                         $('.Collection').html(str);
+                       }
+                      // $('.Collection').text(msg);
+                       
+                    }
+             
+             })
+    })
+
+    //回答点赞
+     $('.play_answer').click(function(){
+         // var a_id=$('.a_id').val();
+          var t =  $(this).index('.play_answer');
+          var a_id=$('.a_id:eq('+t+')').attr('value');
+          //alert(a_id);
+           $.ajax({
+            type:"post",
+                url:"{:U('Answer/fabulous')}",
+                data:{a_id:a_id},
+                success: function(msg){
+                    
+                    if(msg==0){
+                      alert('请先登录');
+                    }
+                    if(msg==1){
+                      alert('这是您自己的回答，不能点赞');
+                    }
+                    if(msg['status']==2){
+                        var str = '<span>'+msg['answer_fabulous']+'</span>';
+                        //alert(123);
+                     $('.anfabulous:eq('+t+')').html(str);
+                    }
+                    if(msg['status']==3){
+                      var str = '<span>'+msg['answer_fabulous']+'</span>';
+                    $('.anfabulous:eq('+t+')').html(str);
+                    }
+                      if(msg==4){
+                      alert('您还没有点过赞');
+                    }
+                }
+            })
+     })
+
+     //评论点赞
+     $('.play_comment').click(function(){
+     
+
+       // var c_id = $('.play_comment').attr('c_id');
+       //alert(c_id);
+       //循环获取id
+      var t =  $(this).index('.play_comment');
+      var c_id=$('.c_id:eq('+t+')').attr('value');
+            $.ajax({
+            type:"post",
+                url:"{:U('Comment/fabulous')}",
+                data:{c_id:c_id},
+                success: function(msg){
+                     if(msg==0){
+                      alert('请先登录');
+                    }
+                    if(msg==1){
+                      alert('这是您自己的评论，不能点赞');
+                    }
+                    if(msg['status']==2){
+                        var str = '<span>'+msg['comment_fabulous']+'</span>';
+                        //alert(123);
+                     $('.comment_fabulous:eq('+t+')').html(str);
+                    }
+                    if(msg['status']==3){
+                      var str = '<span>'+msg['comment_fabulous']+'</span>';
+                    $('.comment_fabulous:eq('+t+')').html(str);
+                    }
+                      if(msg==4){
+                      alert('您还没有点过赞');
+                    }
+                }   
+         
+     })
+            })
+    
+
+    
+     
+    
+ 
+    </script>
+</html>

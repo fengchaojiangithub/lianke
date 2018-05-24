@@ -1,0 +1,43 @@
+.all{
+	width: 100%;
+}
+
+.content{
+	width: 1006px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.Introduction{
+	border: 1px solid #CCCCCC;
+	width: 99%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	position: relative;
+	height: 162px;
+}
+.Introduction table{
+	width: 99%;
+	font-size: 15px;
+	color: #3E3A39;
+	font-weight: 600;
+	margin: 20px auto 0 auto;
+	
+}
+.Introduction span{
+	color: #B5B5B6;
+	font-size: 11px;
+    position: absolute;
+    bottom: 7px;
+    right: 25px;
+}
+.tt p{
+	width: 98%;
+}
+
+.tops{
+	margin-top: 12px;
+}
+#tops{
+	margin-top: 17px;
+}

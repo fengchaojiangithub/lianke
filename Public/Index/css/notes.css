@@ -1,0 +1,106 @@
+.all{
+	width: 100%;
+}
+
+.content{
+	width: 1006px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+.content ul{
+	list-style-type: none;
+	width: 83%;
+	margin: 0 auto;
+		
+}
+.content li{
+	color: #595757;
+	font-size: 13px;
+}
+.li1{
+	margin-top: 12px;
+	padding: 10px 0;
+}
+.li1 input{
+	border: 1px solid #E6E6E7;
+	height: 42px;
+	width: 68%;
+	padding-left: 8px;
+}
+.li2{
+	margin-top: 10px;
+}
+.li2 span{
+    vertical-align: top;	
+}
+.li2 textarea{
+	padding-left: 8px;
+	line-height: 28px;
+	width: 68%;
+	height: 180px;
+	border: 1px solid #E6E6E7;
+	
+}
+
+.xl{
+	/*border: 1px solid red;*/
+	border: 1px solid #E6E6E7;
+	width: 252px;
+	height: 33px;
+	color: #595757;
+	font-size: 12.8px;
+	position: relative;
+	margin: 20px 0 20px 180px ;
+}
+.xl img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+.xl span{
+	margin-left: 10px;
+	line-height: 32px;
+}
+.content button{
+	width: 123px;
+	height: 32.5px;
+	background-color: #171919;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 28px;
+	margin-left: 45%;
+	box-shadow:0 0 0.5px 2px rgb(0,0,0,0.003);
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: #999999; 
+} 
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    color: #999999; 
+} 
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #999999; 
+}
+ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#999999;
+} 
+.bottom{
+	width: 100%;
+	background-color: #FFFFFF;
+	border:1px solid #CCCCCC;
+	border-top: none;
+	position: absolute;
+	top: 34px;
+	left: -1px;
+	display: none;
+}
+.bottom p{
+	padding: 9px 0;
+	margin-left: 10px;
+}
+

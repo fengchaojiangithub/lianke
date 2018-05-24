@@ -1,0 +1,30 @@
+[ 2018-04-28T09:00:17+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-04-28T15:56:57+08:00 ] 127.0.0.1 /Answer/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Answer
+
+[ 2018-04-28T15:57:19+08:00 ] 127.0.0.1 /answer/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+ERR: 无法加载模块:Answer
+
+[ 2018-04-28T15:57:28+08:00 ] 127.0.0.1 /answer/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载模块:Answer
+
+[ 2018-04-28T15:57:47+08:00 ] 127.0.0.1 /answer/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Answer
+

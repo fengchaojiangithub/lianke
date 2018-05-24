@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+</head>
+<script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>
+<body>
+   <h1 align="center">这是登录页面</h1>
+<!-- <script type="text/javascript" src="http://open.51094.com/user/myscript/1580ca26526b2f.html "></script> -->
+
+
+<form id="form1" action="{:U('Login/login_go')}" method="post" role="form" enctype="multipart/form-data">
+
+   
+                <div class="form-group" align="center">
+                    <label>昵称:</label>
+                    <input type="text" name="l_name" /><a href="{:U('Login/login_tel')}">手机号直接登录</a>
+                </div>
+                <div class="form-group" align="center">
+                    <label>密码:</label>
+                    <input type="password" name="l_password" />
+                </div>
+                <div class="form-group" align="center">
+                        <label for="j_captcha" class="t">验证码：</label>
+                         <input id="j_captcha" name="l_code" type="text" class="form-control x164 in">
+                        <img id="u_code"  src="{:U('Login/verify')}" class="m" onclick="One(this)">
+                    </div>
+                <div align="center">
+                <input type="submit" class="btn btn-primary" value="登录" />
+                <input id="btnClear" type="reset" class="btn btn-default" value="重置" /><a href="忘记密码"></a>
+                <a href="{:U('Register/register')}">立即注册</a> <a href="{:U('Register/get_back')}">忘记密码</a>
+                </div>
+                <br>
+                <!-- 第三方 -->
+               <!--  <div  align='center'>
+                    <span id="hzy_fast_login"></span>
+                </div> -->
+                
+   
+</form>
+
+	
+</body>
+<!--显示验证码-->
+
+<script type="text/javascript">
+
+    function One(obj){
+    obj.src="__URL__/Verify/"+Math.random();
+    }  
+
+</script>
+
+</html>

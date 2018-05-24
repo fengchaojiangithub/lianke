@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/questionsAndanswers.css" />   
+    <script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>
+  </head>
+
+<include file='Common:ueditor_js'/>
+	<body>
+		<!-- 引入头部 -->
+	<include file='Common:top'/>
+		<div id="footers"></div>
+		<div class="all">
+			<div class="content">
+				<div class="question">
+					<div class="wt">
+						<div class="wt_left"><div class="tx_out">
+						   <if condition="$ques['user_face'] neq ''">
+						     <img src="__ROOT__/{$ques.user_face}" width="70"  hight="70"/>
+
+						     <else /> 
+							<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+							</if>
+						</div>
+						</div>
+                        <div class="wt_right">
+
+                        	<ul>
+                        	     <input type="hidden" class="id" value="{$ques.id}">
+                        		<li class="wt1">{$ques.title}</li>
+                        		<li class="wt2">{$ques.content}</li>
+                        	    <li class="wt3">
+                        	    	<div class="wt_name"><span class="wt_names">{$ques.user_name}<img src="__PUBLIC__/Index/img/ly.jpg"/><img src="__PUBLIC__/Index/img/ly.jpg"/> </span><span class="wt_time"><?php echo jishuantime($ques['quiz_time']);?></span></div> 
+                        	    	<div class="wt_paly">
+                        	    		<img src="__PUBLIC__/Index/img/fx_03.jpg" id="fx"/><span class="wt_span1"><img src="__PUBLIC__/Index/img/shoucang_03.jpg"/><span>12</span></span><span class="wt_span2"><img src="__PUBLIC__/Index/img/ll.jpg"/><span>{$ques.click}</span></span><span class="wt_span3"><img src="__PUBLIC__/Index/img/pl.jpg"/><span>{$ques.answer_count}</span></span> 
+                        	    	</div>
+                        	    </li>
+                        	    <li class="wt4"><span>以太坊钱包</span><span>钱包</span><span>智能合约</span></li>
+                        	    <li class="wt5">
+                        	     <button type="button" class="but">我来回答</button>
+                                <button type="button">邀请他人</button>
+                        	    </li>
+                              
+                        	</ul>
+                        </div>
+					</div>
+                    <div class="wt top" id="text" style="display:none">
+                    	<div class="texts">
+                    	  <textarea name="info" class="info" id="info" cols="30" rows="10"></textarea>              		
+                    	</div>
+                    	<div class="true"><button type="button">确 认</button></div>
+                    </div> 
+                    <!--问题列表-->
+                    <div class="wt top">
+                        <div class="wt_left">
+							<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+						</div>	
+						<div class="wt_pl">
+						    <p class="wt1">花差花差</p>
+						    <p class="wt2">区块链（Blockchain）是比特币的一个重要概念，它本质上是一个去中心化的数据库，同时作为比特币的底层技术。区块链是一串使用密码学方法相关联产生的数据块，每一个数据块中包含了一次比特币网络交易的信息，用于验证其信息的有效性（防伪）和生成下一个区块</p>
+						    <p class="play"><span class="play_1"><img src="__PUBLIC__/Index/img/dz.jpg"/>10</span><span class="play_2"><img src="__PUBLIC__/Index/img/pl.jpg"/>12</span></p>
+						</div>
+						<div class="cn">已采纳</div>
+                    </div>
+                      <foreach name="answer" item="vo" key="k" >
+                    <div class="wt top">
+                        <div class="wt_left">
+                            <div class="tx_out">
+	                            <if condition="$vo['user_face'] neq ''">
+							    <img src="__ROOT__/{$vo.user_face}" width="70"  hight="70"/>
+
+							     <else /> 
+								<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+								</if>
+							</div>
+						</div>	
+						<div class="wt_pl">
+						    <p class="wt1">{$vo.user_name}</p>
+						    <p class="wt2">{$vo.answer_content}</p>
+						    <p class="play"><span class="play_1"><img src="__PUBLIC__/Index/img/dz.jpg"/>10</span><span class="play_2"><img src="__PUBLIC__/Index/img/pl.jpg"/>12</span></p>
+						</div>
+                    </div>
+                    <div class="next">
+
+                      <?php foreach($vo['comment']  as $key => $val){?>
+                       <hr>
+                      <div class="wt">
+
+                        <div class="wt_left">
+                        	<div class="tx_out">
+	                            <if condition="$val['user_face'] neq ''">
+							    <img src="__ROOT__/<?php echo $val['user_face'];?>" width="70"  hight="70"/>
+
+							     <else /> 
+								<img src="__PUBLIC__/Index/img/touxiang.jpg" />
+								</if>
+							</div>
+							
+						</div>	
+						<div class="wt_pl">
+						    <p class="wt1"><?php echo $val['user_name'];?></p>
+						    <p class="wt2"><?php echo $val['comment_content'];?></p>
+						    <p class="play"><span class="play_1"><img src="__PUBLIC__/Index/img/dz.jpg"/>10</span><span class="play_2"><img src="__PUBLIC__/Index/img/pl.jpg"/>12</span></p>
+
+						</div>
+                      </div>
+                     <?php }?>
+                     
+                    </div>
+                    </foreach>
+                    
+                    
+                     
+				</div>
+				<div class="lists">
+					<div class="title_1">
+						<p>相关问题</p>
+					</div>
+					<ul id="about">
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+						<li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					    <li><p>区块链技术是什么？未来可能应用于哪些？</p><div><span class="xh"><img src="__PUBLIC__/Index/img/xh1_03.jpg"/>10</span><span><img src="__PUBLIC__/Index/img/pl.jpg"/>20</span> </div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+        <div class="bj"></div>
+	</body>
+    <script type="text/javascript">
+    
+    $('#t1').click(function (){
+    	$('.navigation').hide();
+    	$('.login').hide();
+    	$('#search').show();
+    	$('.bj').show();
+    });
+    
+    $('#xx').click(function (){
+    	$('.navigation').show();
+    	$('.login').show();
+    	$('#search').hide();
+    	$('.bj').hide();
+    });
+
+//百度编辑器
+    window.UEDITOR_HOME_URL = "__PUBLIC__/ueditor/";  
+    $(document).ready(function () {  
+      UE.getEditor('info', {  
+      initialFrameHeight: 200,  
+      initialFrameWidth: 800,  
+      serverUrl: "{:U('Question/save_info')}"    
+    });  
+  }); 
+    //点击展示输入框
+    $('.but').click(function(){
+
+    	$('#text').toggle();
+    	$('.true').click(function(){
+           var id =$('.id').val();
+           var info=UE.getEditor('info').getContent()
+           
+             $.ajax({
+            type:"post",
+                url:"{:U('Answer/answer')}",
+                data:{id:id,info:info},
+                success: function(msg){
+                     	  if(msg=="5"){
+                		   alert('这是您自己提问的问题，不能回答');
+             	          }	
+		             	  if(msg=="4"){
+		             	  	alert('请先登录');
+		             	  }
+		                  if(msg=="3"){
+		                   alert('您已回答过');
+		                  }
+		                  if(msg=='1'){
+		                  	alert('回答成功')
+		                      location.href="{:U('Index/index')}";
+		                  }else{
+		                      alert("回答失败");
+                              window.history.back(-1);
+		                }
+              }
+            // });
+    })
+    })
+    	})
+    
+ 
+    </script>
+</html>

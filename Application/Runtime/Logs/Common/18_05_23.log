@@ -1,0 +1,138 @@
+[ 2018-05-23T08:32:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-05-23T08:32:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-05-23T08:33:14+08:00 ] 127.0.0.1 /Public/Admin/fonts/icomoon.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T08:33:14+08:00 ] 127.0.0.1 /Public/Admin/fonts/icomoon.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T09:53:54+08:00 ] 127.0.0.1 /Public/Index/img/bj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T09:53:56+08:00 ] 127.0.0.1 /Public/Index/img/bj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T09:54:16+08:00 ] 127.0.0.1 /Public/Index/img/bj.img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T09:54:18+08:00 ] 127.0.0.1 /Public/Index/img/bj.img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T09:54:20+08:00 ] 127.0.0.1 /Public/Index/img/bj.img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T10:16:26+08:00 ] 127.0.0.1 /Public/Index/img/bi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T10:16:40+08:00 ] 127.0.0.1 /Public/Index/img/bi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T10:17:34+08:00 ] 127.0.0.1 /Public/Index/img/bi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T10:17:42+08:00 ] 127.0.0.1 /Public/Index/img/bi.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T14:39:00+08:00 ] 127.0.0.1 /Public/Index/img/fangda_03.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T14:39:02+08:00 ] 127.0.0.1 /Public/Index/img/fangda_03.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T14:39:02+08:00 ] 127.0.0.1 /Public/Index/img/fangda_03.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:51:18+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:54:12+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:54:52+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:55:49+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:57:56+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T15:58:23+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+ERR: 无法加载模块:Public
+
+[ 2018-05-23T16:00:16+08:00 ] 127.0.0.1 /Public/Index/css/notes.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+ERR: 无法加载模块:Public
+

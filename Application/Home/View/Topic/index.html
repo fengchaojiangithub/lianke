@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/topic_Home.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+	<!-- 引入头部 -->
+	<include file='Common:top'/>
+	<div id="footers"></div>
+	
+	<div class="all">
+		<div class="content">
+			<ul id="uls">
+			    <?php foreach($data as $key =>$val){?>
+				<li>
+					<table class="tab1">
+					     <input type="hidden" class="lab_id" value="<?php echo $val['lab_id']?>">
+						<tr><td><img src="__PUBLIC__/Index/img/touxiang.png"/></td><td><a href="__URL__/topic_list?id=<?php echo $val['lab_id']?>"><?php echo $val['lab_name']?></a></td></tr>
+					</table>
+					<table class="tab2">
+						<tr><td><img src="__PUBLIC__/Index/img/wh3_03.png"/><span>
+					
+						240</span></td><td><img src="__PUBLIC__/Index/img/bj3_03.png"/><span>450</span></td></tr>
+					</table>
+					<div class="ps">
+						<div class="ps_left">已有<span class="attent_number"><?php echo $val['attent_number'] ?></span>人关注</div>
+						<div class="ps_right">关注</div>
+					</div>
+				</li>
+				<?php }?>
+				
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div class="bj"></div>
+	<img src="__PUBLIC__/Index/img/top.jpg" id="top"/>
+	</body>
+	<script type="text/javascript">
+	
+	var lis =document.getElementById('uls').getElementsByTagName('li');
+
+	for (var i=0;i<lis.length;i++) {
+		if(i%4==3){
+			lis[i].style.marginRight = 0;
+		}
+	}
+	
+	$('.navigation span:eq(1)').css('color','#00B9EF');
+
+	$('.ps_right').click(function(){
+			
+		  var t =  $(this).index('.ps_right');
+          var lab_id=$('.lab_id:eq('+t+')').attr('value');
+			//alert(lab_id);
+		  $.ajax({
+                  type:"post",
+                  url:"{:U('Topic/attention')}",
+                  data:{lab_id:lab_id},
+                  success: function(msg){
+                     //alert(msg);
+                          if(msg==0){
+                            alert('请先登录！');
+                          }
+                          if(msg==1){
+                            alert('您已经关注啦！');
+                          }
+                          
+                          if(msg==2){
+                            alert('关注失败');
+                          }
+                          if(msg['status']==3){
+
+                          var str = '<span>'+msg['attent_number']+'</span>';
+                          
+                           $('.attent_number:eq('+t+')').html(str);
+                          }
+                            
+                        
+
+                   }
+                          
+                          
+                          
+            })
+			
+
+	})
+	
+	</script>
+</html>

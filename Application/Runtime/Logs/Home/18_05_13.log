@@ -1,0 +1,1732 @@
+[ 2018-05-13T12:21:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T12:33:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-05-13T12:35:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T12:36:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T12:37:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T13:24:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T13:26:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T13:27:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T13:34:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T13:35:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T13:39:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T14:15:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:19:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:20:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:22:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-13T14:23:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:24:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:24:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:25:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:25:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:25:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:25:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:27:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:28:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:29:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:30:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:36:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:38:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:38:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:39:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 37 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T14:39:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-13T14:39:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:40:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-05-13T14:40:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:41:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-13T14:42:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T14:42:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:43:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:44:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T14:45:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:45:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T14:45:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:31:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:32:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:35:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:35:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T15:36:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T15:36:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:38:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T15:38:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-13T15:39:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T15:43:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-13T15:45:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T15:47:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T16:09:12+08:00 ] 127.0.0.1 /index.php/Home/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Jishuantime
+
+[ 2018-05-13T16:09:20+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:10:06+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-05-13T16:15:55+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:16:34+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:17:05+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T16:17:17+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:17:28+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-13T16:19:08+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-13T16:19:43+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:20:04+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:20:28+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:20:42+08:00 ] 127.0.0.1 /index.php/Home/index/jishuantime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-13T16:23:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: quiz_time D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:23:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: quiz_time D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-05-13T16:24:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: quiz_time D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'q_id' D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 37 行.
+NOTIC: [2] Illegal string offset 'title' D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 37 行.
+NOTIC: [2] Illegal string offset 'user_name' D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 38 行.
+NOTIC: [2] Illegal string offset 'quiz_time' D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [2] Illegal string offset 'click' D:\phpStudy\WWW\lianke\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:27:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: quiz_time D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php 第 45 行.
+ERR: Think\Controller:jishuantime方法不存在！
+
+[ 2018-05-13T16:27:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:28:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T16:28:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-13T16:30:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-13T18:21:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-05-13T18:22:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T18:23:05+08:00 ] 127.0.0.1 /index.php/Home/Index/question_list?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `lk_question` SET `click`='28' WHERE ( id=52 ) [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lk_answer` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `lk_answer` INNER JOIN lk_user on lk_user.user_id=lk_answer.auid  WHERE ( lk_answer.qid=52 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0250s ]
+SQL: SELECT `comment_content`,`comment_time`,`cuid`,`user_name`,`id`,`qid`,`aid` FROM `lk_comment` INNER JOIN lk_user on lk_user.user_id=lk_comment.cuid  WHERE `aid` IN ('')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T18:23:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\lianke\Application\Home\Controller\IndexController.class.php:47) D:\phpStudy\WWW\lianke\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T18:23:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T18:26:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-13T18:26:39+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-13T18:26:44+08:00 ] 127.0.0.1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T18:29:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T18:30:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-13T20:41:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-13T20:41:18+08:00 ] 127.0.0.1 /index.php/Home/Note/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-13T20:41:27+08:00 ] 127.0.0.1 /index.php/Home/Note/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-13T20:49:03+08:00 ] 127.0.0.1 /lianke/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lk_question` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `lk_question` INNER JOIN lk_user on lk_question.quid=lk_user.user_id INNER JOIN lk_lab_user on lk_lab_user.q_id=lk_question.id INNER JOIN lk_label on lk_label.lab_id=lk_lab_user.lab_id  WHERE `solve` = '' ORDER BY quiz_time desc LIMIT 0,8   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lk_question` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lk_comment` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lk_comment` INNER JOIN lk_user on lk_comment.cuid=lk_user.user_id  ORDER BY comment_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

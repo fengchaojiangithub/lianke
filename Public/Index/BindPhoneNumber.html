@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/loginAll.css"/>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<div id="footer">
+		<div class="center">
+		<div class="logo">
+			<img src="img/logo1.png"/>
+			<img src="img/logo2.png"/>
+		</div>	
+		</div>	
+		</div>
+		
+		<div id="bodys">
+		<div class="title">绑定手机号</div>	
+		<div class="box_bj box_bj2">
+		<input type="text" placeholder="手机号" class="sjh"/>
+		<div class="yzms">
+		<input type="text" placeholder="验证码" class="yzm"/>	
+		<button type="button" class="yzm_bnt" id="bnt">获取验证码</button>
+		</div>	
+		<button type="button" id="bd">绑 定</button>
+		<p>点击绑定即同意<a>链客服务条款</a></p>
+		</div>
+		
+		</div>
+	</body>
+	<script type="text/javascript" src="js/yzm.js"></script>
+	<script type="text/javascript" src="js/verification.js"></script>
+	<script type="text/javascript">
+	  var sjh = document.getElementsByClassName("sjh")[0];
+     $('.sjh').blur(function (){
+      	checkPhone(sjh.value);
+    });		
+	</script>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>问题详情页</title>
+</head>
+<script type="text/javascript" src="__PUBLIC__/Index/js/jquery-3.3.1.min.js"></script>  
+<body>
+	<h1 align="left">LOGO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题详情</h1>
+	<table align="center">
+		<tr>
+			<td >问题：</td>
+			<td><?php echo $ques['title']?></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>描述：</td>
+			<td>{$ques.content}</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+			
+			<input type="button" id="btn" value="我要回复"></td>
+
+			<td></td>
+		</tr>
+		<tr>
+		<td>
+             <div class="dis" style="border:1px solid;display:none;">  
+             	<input type="hidden" id="aa" value="{$ques.id}">         
+             <textarea class="textarea" class="content" id="content" cols="30" rows="10"  ></textarea>
+             <button type="button" class="ti" >提交</button>
+             </div>
+             </td>
+		</tr>
+		    
+		<tr>
+			<td></td>
+			<td></td>
+
+		</tr>
+		
+	
+	     <?php foreach($result as $k=>$vaa){?>
+		<tr>
+			<td><?php echo $vaa['answer_content']?></td>
+			<td></td>
+			<td>
+				<input type="button" value="我要评论">
+			    <input type="hidden" class='id' value="<?php echo $v['id'];?>">
+			    <textarea name="content" class="content" cols="50" rows="1">
+			    </textarea>
+			    <input type="button" value="提交">
+
+
+			</td>
+
+		</tr>
+		<?php foreach($vaa['comment'] as $key=>$val){?>
+		<tr>
+			<td><?php echo $val['comment_content']?></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<?php }?>
+		<?php }?>
+		
+		<tr>
+          <td>   
+          </td>
+		</tr>
+		
+	</table>
+	
+</body>
+<script>
+    $('#btn').click(function(){   
+           $('.dis').toggle();
+           $('.ti').click(function(){
+           var id=$('#aa').val();
+           var content=$('#content').val();
+            $.ajax({
+            type:"post",
+                url:"{:U('Answer/answer')}",
+                data:{id:id,content:content},
+                success: function(msg){
+                	if(msg=="3"){
+                		alert('您已回答过');
+                	}
+                	if(msg=="4"){
+                		alert('请先登录');
+                	}
+                    if(msg=='1'){
+                        location.href="{:U('Index/index')}";
+                    }else{
+                        location.href="{:U('Index/index')}";
+                    }
+                 }
+            });
+
+           })  
+    });
+
+     // var str = '0';
+     //   $('.com').click(function(){
+
+     //   	  var t = $('.com').index(this);
+     //      $('.div:eq('+t+')').toggle();
+          
+     //      $('.buts:eq('+t+')').click(function (){
+     //      	var content=$('.content:eq('+t+')').val();
+     //      	//alert(content);
+     //      	var id=$('.id:eq('+t+')').val();
+     //      	alert(id);
+          	//         $.ajax({
+			        // type: 'POST',
+			        // url: '{:U("Comment/com_add")}',
+			        // data: {content:content,id:id},
+			        // datatype: 'JSON',
+			        // success: function(msg){
+			        // 	if(msg=='no'){
+			        // 		alert('请先登录');
+			        // 	}
+			        // 	if(msg=="2"){
+			        // 		alert('您已对此问题评论过了，请查看回复');
+			        // 	}
+			        // 	if(msg=='1'){
+			        // 		alert('评论成功');
+			        // 	}
+			        // 	if(msg=="0"){
+			        // 	    alert('评论失败');
+			        // 	}
+			                
+			       
+			        // }
+			        // });
+       //     });
+
+       // });
+       
+       $('.t1:eq(0)').show();
+       $('.choose').click(function (){
+
+          var t = $('.choose').index(this);
+          $('.t1').hide();
+          $('.t1:eq('+t+')').show();
+
+
+       });
+ 
+</script>
+</html

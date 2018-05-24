@@ -1,0 +1,24 @@
+[ 2018-04-22T12:46:23+08:00 ] 127.0.0.1 /aaaatp/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015601s ]
+ERR: 无法加载模块:Login
+
+[ 2018-04-22T12:48:40+08:00 ] 127.0.0.1 /aaaatp/%7BU(login)%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{U(login)}
+
+[ 2018-04-22T12:48:54+08:00 ] 127.0.0.1 /aaaatp/%7BU(login)%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{U(login)}
+
+[ 2018-04-22T12:54:23+08:00 ] 127.0.0.1 /aaaatp/U('login/index')
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:U('login
+

@@ -1,0 +1,43 @@
+<?php
+return
+array (
+  'DB_TYPE' => 'mysql',
+  'DB_HOST' => '127.0.0.1',
+  'DB_NAME' => 'lianke',
+  'DB_USER' => 'root',
+  'DB_PWD' => 'root',
+  'DB_PORT' => '3306',
+  'DB_PREFIX' => 'lk_',
+  'DB_PARAMS' => 
+  array (
+  ),
+  'DB_DEBUG' => true,
+  'DB_FIELDS_CACHE' => true,
+  'DB_CHARSET' => 'utf8',
+  'DB_DEPLOY_TYPE' => 0,
+  'DB_RW_SEPARATE' => false,
+  'DB_MASTER_NUM' => 1,
+  'DB_SLAVE_NO' => '',
+  'ANSWER' => '1',
+  'ADOPT' => '2',
+  'DEL_ANSWER' => '2',
+  'DEL_QUIZ' => '2',
+  'DEL_ADOPT_QUIZ' => '3',
+  'DEL_ADOPT_ANSWER' => '9',
+  'LE_LOGIN' => '4',
+  'LE_QUIZ' => '3',
+  'LE_ANSWER' => '1',
+  'LE_ADOPT' => '15',
+  'LE_GOOD' => '15',
+  'LV1' => '200',
+  'LV2' => '300',
+  'LV3' => '400',
+  'LV4' => '500',
+  'LV5' => '600',
+  'LV6' => '700',
+  'LV7' => '800',
+  'LV8' => '900',
+  'LV9' => '1000',
+  'LV10' => '1200',
+);
+?>

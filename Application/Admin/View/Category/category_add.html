@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <script src="__PUBLIC__/Admin/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/libs/modernizr.min.js"></script>
+</head>
+<body>
+    <!-- 顶部 -->
+    <include file="Public/top" />
+    <!-- 顶部结束 -->
+<div class="container clearfix">
+    <!-- 左侧 -->
+    <include file="Public/left" />
+    <!-- 左侧结束 -->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:U('index')}">分类管理</a><span class="crumb-step">&gt;</span><span>新增分类</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Category/category_add_go')}" method="post">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>分类名称：</th>
+                                <td>
+                                    <input class="common-text required" size="50" type="text" name="cate_name" id="type"><span id="con_id"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <span id="sub_id"></span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        var fal=false;
+        $('#type').blur(function(){
+            var cat=$(this).val();
+            if(cat==""||cat==null){
+                $('#con_id').html("不能为空！");
+                $('#con_id').css("color","red");
+                fal=false;
+            }else{
+                $('#con_id').html("√");
+                $('#con_id').css("color","green");
+                fal=true;
+            }
+        });
+        $('form').submit(function(){
+            if(fal){
+                return true;
+            }else{
+                $('#sub_id').html("内容有误！");
+                $('#sub_id').css("color","red");
+                return false;
+            }
+        });
+    });
+</script>

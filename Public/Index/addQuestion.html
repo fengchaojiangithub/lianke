@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/addQuestion.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<div id="footer">
+		<div class="center">
+		<div class="logo">
+			<img src="img/logo.jpg"/>		
+		</div>
+		<div class="navigation">
+				<span>问答</span>
+				<span>话题</span>
+				<span>笔记</span>
+				</div>
+		<div class="login">
+		<table>
+			<tr>
+				<td class="t1"><img src="img/fangda_03.png" id="t1"/></td>
+				<td class="t2"><div><a>登陆</a></div><div><a>注册</a></div></td>
+			</tr>
+		</table>	
+		</div>
+		</div>	
+		<div id="search">
+				<input type="text"/>
+				<img src="img/serch_03.jpg" id="fdj"/>
+				<img src="img/serch_06.jpg" id="xx"/>
+				<div id="xiala">
+					<p class="p1">快速链接</p>
+					<ul>
+						<li>以太坊钱包？</li>
+						<li>以太坊的工作原理？</li>
+						<li>以太坊技术框架？</li>
+					</ul>
+					<p class="p2">查看「<span>以太坊</span>」的搜索结果</p>
+				</div>
+			</div>
+	</div>
+	<div class="bj"></div>
+	<div id="footers"></div>
+	
+	<div class="all">
+		<div class="content">
+			<div class="content_new">
+			  <div class="inpt">
+			  	<input type="text" placeholder="问题标签" class="inpt1"/><br />
+			    <!--添加话题-->
+			    <div class="inpt2" id="kg">
+			    	<div class="inpt3"></div>
+			    	<input type="text" placeholder="至少添加1个话题" class="ht"/><img src="img/sousuo_03.png" class="sousuo"/>
+			        <ul id="choose">
+			        	<li>智能合约</li>
+			        	<li>以太坊</li>
+			        	<li>交易所</li>
+			            <li>SEO</li>
+			            <li>智能合约</li>
+			        	<li>以太坊</li>
+			        	<li>交易所</li>
+			            <li>SEO</li> 	
+			            <li>钱包</li>
+			            <li>钱包</li>
+			        </ul>
+			        
+			        <!--<div class="ycz">
+			        	<div><p>钱包</p><span>问题：11&nbsp;笔记：11</span></div>
+			        	<div><p>冷钱包</p><span>问题：11&nbsp;笔记：11</span></div>
+			        </div>
+			        <div class="ycz">
+			        	<div><p>联盟链</p><button>添加新标签</button></div>
+			        </div>-->
+			    </div>	
+			    
+
+			    
+			    <!--搜索下拉框-->
+			    <div class="xiala">
+			      <p>你可能是在找以下问题： <button type="button">关闭推荐</button> </p>	
+			      <ul>
+			      	<li><p>以太坊的前途在哪？</p><span>15回答</span></li>
+			      	<li><p>EOS,以太坊哪个更适合落地应用？</p><span>20回答</span></li>
+			      </ul>
+			      </div>
+			  </div>
+			  
+			  <div class="editor">
+			  </div>
+			  
+			 <img src="img/true_03.jpg" id="true" style="margin:20px 0 10px 280px;"/>
+			  
+			  <div class="my">
+			    悬赏分：<input type="text"/> <span>你有<a>208k</a>,全部悬赏</span>	
+			  </div>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+    
+    $('.ht').click(function (event){
+    	event.stopPropagation();
+    	$('#choose').show();
+    });
+    
+    $('body:not(#kg)').click(function (){
+    	$('#choose').hide();
+    });
+    
+	$('#kg').on('click','li',function (event){
+      event.stopPropagation();
+      
+      $('#choose').hide();
+      var bt = document.getElementsByClassName('inpt2')[0].getElementsByTagName('button');
+      if(bt.length == 0){
+      	$('.inpt3').append('<button type="button">'+$(this).text()+'</button>');
+    	$('.ht').css('width','390px');
+    	$('.ht').attr('placeholder','点击添加第二个话题');
+      }else if(bt.length == 1){
+      	$('.inpt3').append('<button type="button">'+$(this).text()+'</button>');
+      	$('.ht').css('width','290px');
+      	$('.ht').attr('placeholder','点击添加第三个话题');
+      }else if(bt.length == 2){
+      	$('.inpt3').append('<button type="button">'+$(this).text()+'</button>');
+      	$('.ht').css('width','190px');
+      	$('.ht').attr('placeholder','');
+      }     
+	});
+	
+	$('.inpt3').on('click','button',function (){
+		$(this).remove();
+		var bt = document.getElementsByClassName('inpt2')[0].getElementsByTagName('button');
+		if(bt.length == 0){
+			$('.ht').attr('placeholder','至少添加一个话题');
+			$('.ht').css('width','495px');
+		}else if(bt.length == 1){
+			$('.ht').attr('placeholder','点击添加第二个话题');
+			$('.ht').css('width','390px');
+		}else if(bt.length == 2){
+      	$('.ht').css('width','290px');
+      	$('.ht').attr('placeholder','点击添加第三个话题');
+      }     
+	});
+
+	</script>
+</html>
